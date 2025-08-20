@@ -1,6 +1,11 @@
-# bhub - Agregador RSS de Análise do Comportamento
+# 🤖 bhub - Agregador RSS de Análise do Comportamento
 
 Um agregador moderno de artigos científicos em Análise do Comportamento Aplicada via RSS/Atom, desenvolvido com tecnologias de ponta para performance, segurança e experiência do usuário.
+
+[![GitHub](https://img.shields.io/badge/GitHub-elissoncardoso1%2Fbhub--rss--aggregator-blue?logo=github)](https://github.com/elissoncardoso1/bhub-rss-aggregator)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma)](https://www.prisma.io/)
 
 ## 🚀 **Tecnologias & Stack**
 
@@ -41,14 +46,23 @@ Um agregador moderno de artigos científicos em Análise do Comportamento Aplica
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/bhub_ts.git
-cd bhub_ts
+git clone https://github.com/elissoncardoso1/bhub-rss-aggregator.git
+cd bhub-rss-aggregator
 
 # Instale as dependências
 npm install
 
 # Configure as variáveis de ambiente
-cp env.example .env.local
+cp .env.example .env.local
+# Edite .env.local com suas configurações
+
+# Configure o banco de dados
+npx prisma db push
+npx prisma db seed
+
+# Inicie o servidor de desenvolvimento
+npm run dev
+```cp env.example .env.local
 # Edite .env.local com suas configurações
 
 # Configure o banco de dados
