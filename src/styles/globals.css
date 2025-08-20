@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 14 100% 57%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 14 100% 57%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 14 100% 57%;
+    --radius: 0rem;
+    
+    /* Cores específicas do jornal */
+    --journal-red: 14 100% 57%;
+    --journal-orange: 25 95% 53%;
+    --journal-gray-light: 210 20% 95%;
+    --journal-gray-dark: 215 15% 25%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .journal-header {
+    @apply bg-white border-b-2 border-red-600 shadow-sm;
+  }
+  
+  .journal-logo {
+    @apply font-eb-garamond font-bold text-3xl text-gray-900;
+  }
+  
+  .journal-nav-link {
+    @apply font-sans font-medium text-gray-700 hover:text-red-600 transition-colors duration-200 px-4 py-2 border-b-2 border-transparent hover:border-red-600;
+  }
+  
+  .journal-headline {
+    @apply font-eb-garamond font-semibold text-gray-900 leading-tight;
+  }
+  
+
+  
+  .journal-body {
+    @apply font-sans text-gray-700 leading-relaxed;
+  }
+  
+  .journal-card {
+    @apply bg-white border border-gray-200 hover:shadow-md transition-shadow duration-200;
+  }
+  
+
+  
+  .journal-category-badge {
+    @apply inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white bg-red-600 hover:bg-red-700 transition-colors;
+  }
+  
+  .journal-date {
+    @apply text-sm text-gray-500 font-sans;
+  }
+  
+  .journal-author {
+    @apply text-sm text-gray-600 font-sans font-medium;
+  }
+  
+  .journal-excerpt {
+    @apply font-sans text-gray-600 leading-relaxed;
+  }
+  
+  .journal-sidebar {
+    @apply bg-gray-50 border-l border-gray-200 lg:border-l md:border-t lg:border-t-0;
+  }
+  
+  .journal-sidebar-section {
+    @apply p-4 border-b border-gray-200;
+  }
+  
+  .journal-sidebar-title {
+    @apply font-eb-garamond font-semibold text-lg text-gray-900 mb-3;
+  }
+  
+  /* Responsividade para headlines */
+  .journal-headline-main {
+    @apply journal-headline text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
+  }
+  
+  .journal-headline-secondary {
+    @apply journal-headline text-lg md:text-xl lg:text-2xl;
+  }
+  
+  .journal-headline-tertiary {
+    @apply journal-headline text-base md:text-lg lg:text-xl;
+  }
+  
+  /* Cards responsivos */
+  .journal-card-main {
+    @apply journal-card p-4 md:p-6 mb-4 md:mb-6;
+  }
+  
+  .journal-card-secondary {
+    @apply journal-card p-3 md:p-4 mb-3 md:mb-4;
+  }
+  
+  .journal-card-small {
+    @apply journal-card p-2 md:p-3 mb-2 md:mb-3;
+  }
+  
+  .journal-footer {
+    @apply bg-gray-100 border-t border-gray-300 mt-16 py-8;
+  }
+  
+  .loading-shimmer {
+    @apply animate-pulse bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200;
+  }
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500 dark:bg-gray-500;
+}
+
+/* Animações customizadas */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Estilos para formulários */
+.form-field {
+  @apply space-y-2;
+}
+
+.form-label {
+  @apply text-sm font-medium text-gray-700 dark:text-gray-300;
+}
+
+.form-input {
+  @apply w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white;
+}
+
+.form-error {
+  @apply text-sm text-red-600 dark:text-red-400;
+}
+
+/* Estilos para tabelas */
+.table-container {
+  @apply overflow-x-auto border border-gray-200 dark:border-gray-700 rounded-lg;
+}
+
+.table-header {
+  @apply bg-gray-50 dark:bg-gray-800 px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider;
+}
+
+.table-cell {
+  @apply px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100;
+}
+
+/* Estilos para badges de status */
+.status-active {
+  @apply bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200;
+}
+
+.status-inactive {
+  @apply bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200;
+}
+
+.status-error {
+  @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200;
+}
