@@ -1,17 +1,21 @@
-# Proposta: Sistema de Tradução com IA Local
+# Sistema de Tradução com IA Local - DESABILITADO
+
+> ⚠️ **AVISO**: Esta funcionalidade está atualmente **DESABILITADA** para reduzir o tamanho do bundle e dependências.
+> 
+> Para reativar, siga as instruções na seção "Reativação" no final deste documento.
 
 ## Visão Geral
 
-Este documento propõe a implementação de um sistema de tradução usando modelos de IA locais, similar ao sistema de classificação já existente no projeto. A proposta visa criar uma solução híbrida que combine a precisão de APIs externas com a eficiência e privacidade de modelos locais.
+Esta documentação detalha a implementação de um sistema de tradução com IA local para o projeto bhub, utilizando modelos de linguagem executados diretamente no servidor, sem dependência de APIs externas.
 
 ## Contexto Atual
 
 ### Sistema de Classificação (ML) Existente
-- **Modelo**: `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`
+- **Modelo**: `neuralmind/bert-base-portuguese-cased`
 - **Biblioteca**: `@xenova/transformers`
 - **Funciona 100% offline** após download inicial
 - **Performance**: ~100-500ms por classificação
-- **Tamanho**: ~50MB download inicial
+- **Tamanho**: ~110MB download inicial
 
 ### Sistema de Tradução Atual
 - **Provedor Principal**: Google Translate API (pago)
@@ -304,16 +308,33 @@ A implementação de um sistema de tradução com IA local representa uma evolu�
 
 A implementação gradual em fases permite validação contínua e ajustes baseados em feedback real, garantindo uma transição suave e bem-sucedida.
 
-## Próximos Passos
+## Reativação da Funcionalidade
 
-1. **Aprovação da proposta** e definição de prioridades
-2. **Setup do ambiente de desenvolvimento** com @xenova/transformers
-3. **Implementação da Fase 1** (Prova de Conceito)
-4. **Avaliação dos resultados** e decisão sobre continuidade
-5. **Implementação completa** seguindo o cronograma proposto
+> Esta seção contém instruções para reativar a tradução por IA local quando necessário.
+
+### Passo 1: Instalar Dependências
+```bash
+npm install @xenova/transformers onnxruntime-node
+```
+
+### Passo 2: Reativar Configurações
+1. **next.config.js**: Descomente as configurações relacionadas a `@xenova/transformers`
+2. **aiTranslationService.ts**: Descomente os imports e código da classe
+3. **translationManager.ts**: Ajuste a ordem de provedores para incluir 'ai-local' primeiro
+
+### Passo 3: Variáveis de Ambiente
+```env
+AI_TRANSLATION_ENABLED=true
+AI_TRANSLATION_MODEL=nllb-200-distilled-600M
+```
+
+### Passo 4: Testes
+1. Execute os testes de tradução
+2. Verifique a integração com o TranslationManager
+3. Teste o fallback para outros provedores
 
 ---
 
-**Autor**: Sistema de IA  
-**Data**: Janeiro 2025  
-**Versão**: 1.0
+**Status**: DESABILITADO  
+**Última Atualização**: Janeiro 2025  
+**Versão**: 1.1

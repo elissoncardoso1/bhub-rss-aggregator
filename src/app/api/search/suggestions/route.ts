@@ -9,7 +9,6 @@ export async function GET(request: NextRequest) {
     const rateLimitResponse = await checkSearchRateLimit(request)
     if (rateLimitResponse) {
       logWarn('Rate limit excedido para sugestões de busca', { 
-        ip: request.ip || 'unknown',
         userAgent: request.headers.get('user-agent') 
       })
       return addSecurityHeaders(rateLimitResponse)
@@ -18,7 +17,7 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url)
     const query = searchParams.get("q")?.trim()
     
-    logDebug('Buscando sugestões', { query, ip: request.ip || 'unknown' })
+    logDebug('Buscando sugestões', { query })
     
     if (!query || query.length < 2) {
       return addSecurityHeaders(NextResponse.json({
@@ -143,8 +142,7 @@ export async function GET(request: NextRequest) {
 
   } catch (error: any) {
     logError('Erro ao buscar sugestões', error, { 
-      query: new URL(request.url).searchParams.get("q"),
-      ip: request.ip || 'unknown'
+      query: new URL(request.url).searchParams.get("q")
     })
     
     return addSecurityHeaders(NextResponse.json({

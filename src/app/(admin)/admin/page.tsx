@@ -13,15 +13,19 @@ import {
   AlertTriangle,
   Database,
   Activity,
-  Plus
+  Plus,
+  Star
 } from "lucide-react"
 import Link from "next/link"
 
 // Componente para buscar estatísticas administrativas
 async function AdminStatsSection() {
   try {
-    const response = await fetch(`${process.env.NEXTAUTH_URL || 'http://localhost:3000'}/api/stats`, {
-      next: { revalidate: 60 } // Revalida a cada minuto
+    // Em ambiente de desenvolvimento, usa a porta 3001 por padrão
+    const baseUrl = process.env.NEXTAUTH_URL || 'http://localhost:3001'
+    
+    const response = await fetch(`${baseUrl}/api/stats`, {
+      cache: 'no-store' // Remove cache para mostrar dados atualizados
     })
     
     if (!response.ok) {
@@ -165,6 +169,25 @@ export default function AdminDashboard() {
                 </Link>
 
                 <VerifyButton />
+
+                <Link href="/admin/content">
+                  <Button 
+                    variant="outline" 
+                    className="justify-start h-auto p-4 w-full"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 bg-yellow-100 dark:bg-yellow-900/20 rounded-lg">
+                        <Star className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
+                      </div>
+                      <div className="text-left">
+                        <div className="font-medium">Gerenciar Conteúdo</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-400">
+                          Artigos destacados e banners
+                        </div>
+                      </div>
+                    </div>
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>

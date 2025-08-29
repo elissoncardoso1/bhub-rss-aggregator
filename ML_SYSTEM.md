@@ -21,6 +21,20 @@ Este documento descreve o sistema de Machine Learning implementado para classifi
 4. Fallback → Sistema de palavras-chave se ML falhar
 ```
 
+## Modelo de IA
+
+O sistema utiliza o modelo `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` para:
+- Gerar embeddings de texto multilíngue (incluindo português)
+- Classificar artigos por similaridade semântica
+- Suporte para múltiplos idiomas com foco em português
+
+### Características do Modelo:
+- **Tamanho**: ~80MB (multilíngue otimizado)
+- **Idiomas**: Multilíngue com excelente suporte para português
+- **Qualidade**: Alta precisão em tarefas de similaridade semântica
+- **Performance**: Otimizado para classificação de texto multilíngue
+- **Taxa de Acerto**: 87.5% em testes específicos de Análise do Comportamento
+
 ## Categorias Suportadas
 
 - **Clínica**: Terapia, psicologia clínica, tratamento

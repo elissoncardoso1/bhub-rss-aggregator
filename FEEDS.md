@@ -31,8 +31,8 @@ curl -X POST http://localhost:3000/api/admin/sync-all
 
 | Revista/Publicação | Área | Status | URL do Feed |
 |-------------------|------|--------|-------------|
-| **Revista Perspectivas em Análise do Comportamento** | Behaviorismo Radical / ABA | ✅ Ativo | `https://revistaperspectivas.org/perspectivas/feed` |
-| **Revista ESPECTRO (UFSCar)** | ABA (Autismo) | ✅ Ativo | `https://espectro.ufscar.br/index.php/1979/gateway/plugin/WebFeedGatewayPlugin/rss2` |
+| **Revista Perspectivas em Análise do Comportamento** | Behaviorismo Radical / ABA | ✅ Ativo | `https://revistaperspectivas.org/perspectivas/gateway/plugin/WebFeedGatewayPlugin/rss2` |
+| **Revista ESPECTRO (UFSCar)** | ABA (Autismo) | ✅ Ativo | `https://www.espectro.ufscar.br/index.php/1979/gateway/plugin/WebFeedGatewayPlugin/rss2` |
 | **Boletim Contexto (ABPMC)** | Análise do Comportamento (informativo) | ✅ Ativo | `https://boletimcontexto.wordpress.com/feed` |
 | **Portal Comporte-se** | Análise do Comportamento (divulgação) | ✅ Ativo | `https://comportese.com/feed` |
 | **Revista Brasileira de Análise do Comportamento (RBAC)** | Análise do Comportamento | ❌ Sem feed | *Sem feed RSS disponível* |
@@ -43,12 +43,12 @@ curl -X POST http://localhost:3000/api/admin/sync-all
 |--------------------|------|--------|-------------|
 | **Journal of Applied Behavior Analysis (JABA)** | ABA (experimental aplicada) | ✅ Ativo | `https://onlinelibrary.wiley.com/rss/journal/10.1002/(ISSN)1938-3703` |
 | **Journal of the Experimental Analysis of Behavior (JEAB)** | Análise Experimental do Comportamento | ✅ Ativo | `https://onlinelibrary.wiley.com/rss/journal/10.1002/(ISSN)1938-3711` |
-| **Journal of Organizational Behavior Management (JOBM)** | OBM | ✅ Ativo | `https://www.tandfonline.com/rss/journal/WORG20` |
+| **Journal of Organizational Behavior Management (JOBM)** | OBM | ✅ Ativo | `https://www.tandfonline.com/feed/rss/worg20` |
 | **Behavior Analysis in Practice (BAP)** | ABA (prática clínica) | ✅ Ativo | `https://link.springer.com/search.rss?facet-journal-id=40617&facet-content-type=Article` |
 | **Perspectives on Behavior Science** | Teoria e Revisões | ✅ Ativo | `https://link.springer.com/search.rss?facet-journal-id=40614&facet-content-type=Article` |
 | **The Analysis of Verbal Behavior (TAVB)** | Comportamento Verbal | ✅ Ativo | `https://link.springer.com/search.rss?facet-journal-id=40616&facet-content-type=Article` |
 | **Behavior and Social Issues (BSI)** | ABA e questões sociais | ✅ Ativo | `https://link.springer.com/search.rss?facet-journal-id=42822&facet-content-type=Article` |
-| **OBM Network News (Newsletter)** | OBM (informativo institucional) | ✅ Ativo | `https://www.obmnetwork.com/news/news_rss.asp` |
+| **OBM Network News (Newsletter)** | OBM (informativo institucional) | ✅ Ativo | `http://www.obmnetwork.com/resource/rss/news.rss` |
 | **Behavior and Philosophy** | Filosofia e Behaviorismo | ❌ Sem feed | *Sem feed RSS disponível* |
 
 ## 📂 Categorias Disponíveis

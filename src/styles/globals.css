@@ -96,7 +96,7 @@
 
   
   .journal-category-badge {
-    @apply inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white bg-red-600 hover:bg-red-700 transition-colors;
+    @apply inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white rounded-full transition-colors;
   }
   
   .journal-date {

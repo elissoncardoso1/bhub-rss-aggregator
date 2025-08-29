@@ -5,6 +5,9 @@ import { QueryProvider } from "@/src/components/QueryProvider"
 import { ToastProvider } from "@/src/components/ToastProvider"
 import "@/src/styles/globals.css"
 
+// Inicializa sistemas críticos da aplicação
+import "@/src/lib/startup"
+
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {

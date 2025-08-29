@@ -1,10 +1,15 @@
 import cron from "node-cron"
 import { syncAllFeeds } from "./syncFeeds"
-import { cleanRepository } from "./cleanRepository"
+// import { cleanRepository } from "./cleanRepository" // DESABILITADO - Sistema de consulta
 
 /**
  * Configuração dos jobs de cron
  * IMPORTANTE: Use apenas em ambientes com servidor persistente (não serverless)
+ * 
+ * NOTA: Sistema configurado como REPOSITÓRIO DE CONSULTA
+ * - Artigos antigos são mantidos para consulta histórica
+ * - Não há limpeza automática de conteúdo
+ * - Foco em preservar o acervo científico
  */
 
 let cronJobsStarted = false
@@ -35,33 +40,34 @@ export function startCronJobs() {
     timezone: "America/Sao_Paulo"
   })
   
-  // Limpeza semanal (domingo às 02:00)
-  cron.schedule("0 2 * * 0", async () => {
-    console.log("⏰ Executando limpeza automática...")
-    try {
-      await cleanRepository(365) // Remove artigos com mais de 365 dias
-    } catch (error) {
-      console.error("❌ Erro na limpeza automática:", error)
-    }
-  }, {
-    name: "clean-repository",
-    timezone: "America/Sao_Paulo"
-  })
+  // LIMPEZA AUTOMÁTICA DESABILITADA - Sistema de consulta
+  // cron.schedule("0 2 * * 0", async () => {
+  //   console.log("⏰ Executando limpeza automática...")
+  //   try {
+  //     await cleanRepository(365) // Remove artigos com mais de 365 dias
+  //   } catch (error) {
+  //     console.error("❌ Erro na limpeza automática:", error)
+  //   }
+  // }, {
+  //   name: "clean-repository",
+  //   timezone: "America/Sao_Paulo"
+  // })
   
   cronJobsStarted = true
   console.log("✅ Cron jobs iniciados com sucesso")
   console.log("  - Sincronização: a cada hora")
-  console.log("  - Limpeza: domingos às 02:00")
+  console.log("  - Limpeza: DESABILITADA (Sistema de consulta)")
+  console.log("  - Artigos antigos são preservados para consulta histórica")
 }
 
 export function stopCronJobs() {
-  cron.getTasks().forEach((task, name) => {
+  cron.getTasks().forEach(task => {
+    console.log(`🛑 Parando cron job`)
     task.stop()
-    console.log(`⏹️ Parando job: ${name}`)
   })
   cronJobsStarted = false
-  console.log("🛑 Todos os cron jobs foram parados")
+  console.log("✅ Cron jobs parados")
 }
 
-// Para ambientes serverless, exporte as funções individuais
-export { syncAllFeeds, cleanRepository }
+// Exporta apenas a sincronização (limpeza desabilitada)
+export { syncAllFeeds }

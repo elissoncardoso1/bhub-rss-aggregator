@@ -25,3 +25,1837 @@
 2025-08-19 13:30:19 [WARN]: HuggingFace API key não configurada {
   "service": "bhub-api"
 }
+2025-08-21 20:05:46 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:46 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:46 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:46 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:46 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:46 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:05:47 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:46 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:46 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:05:47 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:46 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:05:47 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:46 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:46 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:05:47 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:46 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:46 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:05:47 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:05:47 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:05:47 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:05:47 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:05:47 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:47 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:05:47 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:05:48 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:07:36 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:07:36 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:07:36 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:07:36 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:07:36 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:07:36 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:07:36 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:07:36 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:07:36 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:36 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:07:36 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:07:38 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:11:59 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:11:59 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:11:59 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:11:59 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:11:59 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:11:59 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:11:59 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:11:59 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:11:59 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:11:59 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:11:59 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:12:01 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:17:28 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:17:28 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:17:28 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:17:28 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:17:28 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:17:28 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:17:28 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:17:28 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:17:28 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:28 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+}
+2025-08-21 20:17:28 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-21 20:17:30 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:44:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:44:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:44:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:44:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:44:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:44:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:44:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:44:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:44:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:44:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:16 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:16 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:16 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:16 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:44:16 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:25 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:26 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:27 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:27 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:27 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:27 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:27 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:27 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:24 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:27 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:27 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:27 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:25 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:25 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:27 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:27 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:44:27 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:51:51 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:51:51 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:51:51 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:51:51 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:51:51 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:51:51 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:51:51 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:51:51 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:51 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:51:51 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:56 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:56 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:56 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:51:56 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:51:56 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:03 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:03 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:03 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:03 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:07 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:04 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:52:08 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:22 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:58:23 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:58:23 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:58:23 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:58:23 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:58:23 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:58:23 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:58:23 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:58:23 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:23 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:58:23 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:28 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:28 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:28 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 11:58:28 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 11:58:28 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:00:32 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:00:32 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:00:32 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:00:32 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:00:32 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:00:32 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:00:32 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:32 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:00:32 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:38 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:39 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:39 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:39 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:00:39 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:44 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:41 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:45 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:45 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:00:45 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:14:03 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:14:03 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:14:03 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:14:03 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:14:07 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:14:07 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:14:07 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:14:07 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:14:07 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:14:07 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:15:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:15:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:15:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:15:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:15:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:12 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:15:12 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:15 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:15 [INFO]: 🚀 Inicializando aplicação... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:15 [INFO]: 🤖 Inicializando sistema de ML em background... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:15 [INFO]: Inicializando modelo de embeddings... {
+  "service": "bhub-api",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
+2025-08-29 12:15:15 [INFO]: 🎯 Aplicação inicializada {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Modelo de embeddings carregado localmente com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Modelo carregado do cache local {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:17 [INFO]: Calculando embeddings das categorias... {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Embeddings calculados para 5 categorias {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: Sistema de embeddings inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 12:15:18 [INFO]: ✅ Sistema de ML inicializado com sucesso {
+  "service": "bhub-api"
+}
+2025-08-29 13:24:27 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}
+2025-08-29 13:24:30 [WARN]: HuggingFace API key não configurada {
+  "service": "bhub-api"
+}

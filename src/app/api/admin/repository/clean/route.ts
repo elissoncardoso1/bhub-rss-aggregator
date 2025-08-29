@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 import { withAdmin, apiSuccess, apiError } from "@/src/lib/api-auth"
-import { cleanRepository, archiveOldArticles } from "@/src/jobs/cleanRepository"
+// import { cleanRepository, archiveOldArticles } from "@/src/jobs/cleanRepository" // DESABILITADO
 import { z } from "zod"
 
 const cleanSchema = z.object({
@@ -9,44 +9,38 @@ const cleanSchema = z.object({
 })
 
 /**
- * POST /api/admin/repository/clean - Limpa ou arquiva artigos antigos
+ * POST /api/admin/repository/clean - Limpa ou arquiva artigos antigos (DESABILITADO)
+ * 
+ * NOTA: Sistema configurado como REPOSITÓRIO DE CONSULTA
+ * - Artigos antigos são preservados para consulta histórica
+ * - Não há limpeza automática de conteúdo
+ * - Foco em preservar o acervo científico
  */
 export const POST = withAdmin(async (request: NextRequest) => {
   try {
     const body = await request.json()
     const { action, daysToKeep } = cleanSchema.parse(body)
 
-    console.log(`Iniciando ${action} de artigos com mais de ${daysToKeep} dias`)
+    console.log(`🚫 Tentativa de ${action} de artigos (DESABILITADO - Sistema de consulta)`)
 
-    let result
-
-    if (action === "archive") {
-      result = await archiveOldArticles(daysToKeep)
-      return apiSuccess({
-        action: "archive",
-        daysToKeep,
-        archivedArticles: result.archivedArticles,
-        processedAt: new Date().toISOString()
-      }, `${result.archivedArticles} artigos foram arquivados com sucesso.`)
-    } else {
-      result = await cleanRepository(daysToKeep)
-      return apiSuccess({
-        action: "delete",
-        daysToKeep,
-        deletedArticles: result.deletedArticles,
-        deletedAuthors: result.deletedAuthors,
-        cutoffDate: 'cutoffDate' in result ? result.cutoffDate : undefined,
-        processedAt: new Date().toISOString()
-      }, `${result.deletedArticles} artigos e ${result.deletedAuthors} autores órfãos foram removidos.`)
-    }
+    // Retorna informação sobre o sistema de consulta
+    return apiSuccess({
+      status: "disabled",
+      reason: "Sistema configurado como repositório de consulta",
+      requestedAction: action,
+      requestedDaysToKeep: daysToKeep,
+      message: "Artigos antigos são preservados para consulta histórica",
+      processedAt: new Date().toISOString(),
+      recommendation: "Use o sistema de arquivamento se necessário, mas preserve o conteúdo"
+    }, `Sistema de limpeza desabilitado - Foco em preservar o acervo científico`)
 
   } catch (error: any) {
-    console.error("Erro na limpeza do repositório:", error)
+    console.error("Erro no endpoint de limpeza:", error)
     
     if (error instanceof z.ZodError) {
       return apiError("Parâmetros inválidos", 400, error.errors)
     }
     
-    return apiError("Erro ao limpar repositório", 500, error)
+    return apiError("Erro no endpoint de limpeza", 500, error)
   }
 })

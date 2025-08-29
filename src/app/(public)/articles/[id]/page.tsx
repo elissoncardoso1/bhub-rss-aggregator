@@ -19,9 +19,9 @@ import {
 import Link from "next/link"
 
 interface ArticlePageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 async function getArticle(id: string) {
@@ -156,13 +156,14 @@ async function getSimilarArticles(articleId: string, categoryId?: bigint | null)
 }
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
-  const article = await getArticle(params.id)
+  const { id } = await params
+  const article = await getArticle(id)
   
   if (!article) {
     notFound()
   }
 
-  const similarArticles = await getSimilarArticles(params.id, article.category?.id)
+  const similarArticles = await getSimilarArticles(id, article.category?.id)
 
   return (
     <div className="min-h-screen py-8">
@@ -365,7 +366,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </h2>
             <div className="space-y-6">
               {similarArticles.map((article) => (
-                <ArticleCard key={article.id} article={article} />
+                <ArticleCard key={article.id} article={article} showImage={true} />
               ))}
             </div>
           </section>

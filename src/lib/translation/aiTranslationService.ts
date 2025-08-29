@@ -1,4 +1,6 @@
-import { pipeline, Pipeline, TranslationPipeline } from '@xenova/transformers';
+// TRADUÇÃO POR IA LOCAL DESABILITADA
+// Descomente as linhas abaixo e instale as dependências quando implementar tradução por IA
+// import { pipeline, Pipeline, TranslationPipeline } from '@xenova/transformers';
 
 export interface AITranslationResult {
   translatedText: string;
@@ -19,10 +21,14 @@ export interface AITranslationOptions {
 /**
  * Serviço de tradução usando modelos de IA locais via @xenova/transformers
  * Suporta múltiplos modelos: NLLB-200, MarianMT, M2M100
+ * 
+ * ATENÇÃO: Esta funcionalidade está DESABILITADA
+ * Para habilitar, instale as dependências @xenova/transformers e onnxruntime-node
+ * e descomente o código relacionado
  */
 export class AITranslationService {
   private static readonly DEFAULT_MODEL = 'Xenova/nllb-200-distilled-600M';
-  private translator: TranslationPipeline | null = null;
+  // private translator: TranslationPipeline | null = null;
   private modelName: string;
   private isInitialized = false;
   private initializationPromise: Promise<void> | null = null;
@@ -37,6 +43,10 @@ export class AITranslationService {
    * Inicializa o serviço de tradução carregando o modelo
    */
   async initialize(): Promise<void> {
+    // FUNCIONALIDADE DESABILITADA
+    throw new Error('Tradução por IA local está desabilitada. Para habilitar, instale @xenova/transformers e onnxruntime-node');
+    
+    /*
     if (this.isInitialized) {
       return;
     }
@@ -47,9 +57,17 @@ export class AITranslationService {
 
     this.initializationPromise = this._initializeModel();
     await this.initializationPromise;
+    */
   }
 
+  /**
+   * Inicializa o modelo de tradução
+   * DESABILITADO - Para habilitar, descomente e instale dependências
+   */
   private async _initializeModel(): Promise<void> {
+    throw new Error('Tradução por IA local está desabilitada');
+    
+    /*
     try {
       if (typeof window === 'undefined') {
         console.log(`[AITranslation] Inicializando modelo: ${this.modelName}`);
@@ -82,12 +100,17 @@ export class AITranslationService {
       }
       throw new Error(`Falha ao inicializar modelo de tradução: ${error}`);
     }
+    */
   }
 
   /**
    * Verifica se o serviço está disponível
+   * DESABILITADO - Sempre retorna false
    */
   async isAvailable(): Promise<boolean> {
+    return false; // Sempre desabilitado
+    
+    /*
     try {
       if (!this.isInitialized) {
         await this.initialize();
@@ -96,15 +119,20 @@ export class AITranslationService {
     } catch {
       return false;
     }
+    */
   }
 
   /**
    * Traduz um texto usando o modelo de IA local
+   * DESABILITADO - Para habilitar, descomente e instale dependências
    */
   async translateText(
     text: string,
     options: AITranslationOptions
   ): Promise<AITranslationResult> {
+    throw new Error('Tradução por IA local está desabilitada. Para habilitar, instale @xenova/transformers e onnxruntime-node');
+    
+    /*
     if (!text || text.trim().length === 0) {
       throw new Error('Texto para tradução não pode estar vazio');
     }
@@ -179,6 +207,7 @@ export class AITranslationService {
       }
       throw new Error(`Falha na tradução: ${error}`);
     }
+    */
   }
 
   /**
@@ -311,7 +340,9 @@ export class AITranslationService {
     // Limpar cache se estiver muito grande
     if (this.cache.size >= this.maxCacheSize) {
       const firstKey = this.cache.keys().next().value;
-      this.cache.delete(firstKey);
+      if (firstKey) {
+        this.cache.delete(firstKey);
+      }
     }
 
     this.cache.set(cacheKey, result);
@@ -353,7 +384,7 @@ let aiTranslationInstance: AITranslationService | null = null;
  */
 export function getAITranslationService(modelName?: string): AITranslationService {
   if (!aiTranslationInstance || (modelName && aiTranslationInstance.getModelInfo().name !== modelName)) {
-    aiTranslationInstance = new AITranslationService(modelName);
+    aiTranslationInstance = new AITranslationService(modelName || 'Xenova/nllb-200-distilled-600M');
   }
   return aiTranslationInstance;
 }

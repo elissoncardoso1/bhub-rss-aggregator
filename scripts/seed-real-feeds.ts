@@ -41,7 +41,7 @@ async function main() {
     {
       name: 'Revista Perspectivas em Análise do Comportamento',
       journalName: 'Revista Perspectivas em Análise do Comportamento',
-      feedUrl: 'https://revistaperspectivas.org/perspectivas/feed',
+      feedUrl: 'https://revistaperspectivas.org/perspectivas/gateway/plugin/WebFeedGatewayPlugin/rss2',
       feedType: 'RSS' as const,
       country: 'BR',
       language: 'pt-BR',
@@ -50,7 +50,7 @@ async function main() {
     {
       name: 'Revista ESPECTRO (UFSCar)',
       journalName: 'Revista ESPECTRO',
-      feedUrl: 'https://espectro.ufscar.br/index.php/1979/gateway/plugin/WebFeedGatewayPlugin/rss2',
+      feedUrl: 'https://www.espectro.ufscar.br/index.php/1979/gateway/plugin/WebFeedGatewayPlugin/rss2',
       feedType: 'RSS2' as const,
       country: 'BR',
       language: 'pt-BR',
@@ -124,7 +124,7 @@ async function main() {
     {
       name: 'Journal of Organizational Behavior Management (JOBM)',
       journalName: 'Journal of Organizational Behavior Management',
-      feedUrl: 'https://www.tandfonline.com/rss/journal/WORG20',
+      feedUrl: 'https://www.tandfonline.com/feed/rss/worg20',
       feedType: 'RSS' as const,
       country: 'US',
       language: 'en',
@@ -169,7 +169,7 @@ async function main() {
     {
       name: 'OBM Network News (Newsletter)',
       journalName: 'OBM Network News',
-      feedUrl: 'https://www.obmnetwork.com/news/news_rss.asp',
+      feedUrl: 'http://www.obmnetwork.com/resource/rss/news.rss',
       feedType: 'RSS' as const,
       country: 'US',
       language: 'en',
@@ -300,7 +300,7 @@ function listFeedsOnly() {
     {
       name: 'Revista Perspectivas em Análise do Comportamento',
       journalName: 'Revista Perspectivas em Análise do Comportamento',
-      feedUrl: 'https://revistaperspectivas.org/perspectivas/feed',
+      feedUrl: 'https://revistaperspectivas.org/perspectivas/gateway/plugin/WebFeedGatewayPlugin/rss2',
       feedType: 'RSS' as const,
       country: 'BR',
       language: 'pt-BR',
@@ -309,7 +309,7 @@ function listFeedsOnly() {
     {
       name: 'Revista ESPECTRO (UFSCar)',
       journalName: 'Revista ESPECTRO',
-      feedUrl: 'https://espectro.ufscar.br/index.php/1979/gateway/plugin/WebFeedGatewayPlugin/rss2',
+      feedUrl: 'https://www.espectro.ufscar.br/index.php/1979/gateway/plugin/WebFeedGatewayPlugin/rss2',
       feedType: 'RSS2' as const,
       country: 'BR',
       language: 'pt-BR',
@@ -358,7 +358,7 @@ function listFeedsOnly() {
     {
       name: 'Journal of Organizational Behavior Management (JOBM)',
       journalName: 'Journal of Organizational Behavior Management',
-      feedUrl: 'https://www.tandfonline.com/rss/journal/WORG20',
+      feedUrl: 'https://www.tandfonline.com/feed/rss/worg20',
       feedType: 'RSS' as const,
       country: 'US',
       language: 'en',
@@ -403,7 +403,7 @@ function listFeedsOnly() {
     {
       name: 'OBM Network News (Newsletter)',
       journalName: 'OBM Network News',
-      feedUrl: 'https://www.obmnetwork.com/news/news_rss.asp',
+      feedUrl: 'http://www.obmnetwork.com/resource/rss/news.rss',
       feedType: 'RSS' as const,
       country: 'US',
       language: 'en',

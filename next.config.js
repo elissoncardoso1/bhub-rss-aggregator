@@ -1,33 +1,90 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverComponentsExternalPackages: ['@xenova/transformers'],
-    outputFileTracingRoot: undefined,
-    outputFileTracingExcludes: {
-      '*': [
-        'node_modules/@xenova/transformers/**/*',
-        'node_modules/@xenova/transformers/dist/**/*'
-      ]
-    }
+  // Configuração básica do Next.js
+  // Tradução por IA local foi removida - para reativar, consulte AI_TRANSLATION_PROPOSAL.md
+  
+  // 🔴 Configuração de CORS e headers de segurança
+  async headers() {
+    return [
+      {
+        source: '/api/:path*',
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: process.env.NODE_ENV === 'production' 
+              ? process.env.NEXTAUTH_URL || 'https://seudominio.com'
+              : 'http://localhost:3000'
+          },
+          {
+            key: 'Access-Control-Allow-Methods',
+            value: 'GET, POST, PUT, DELETE, OPTIONS'
+          },
+          {
+            key: 'Access-Control-Allow-Headers',
+            value: 'Content-Type, Authorization, X-Requested-With'
+          },
+          {
+            key: 'Access-Control-Allow-Credentials',
+            value: 'true'
+          }
+        ]
+      },
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff'
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY'
+          },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block'
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin'
+          }
+        ]
+      }
+    ]
   },
+  
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
+  // Configuração para @xenova/transformers
   webpack: (config, { isServer }) => {
-    // Configuração para o @xenova/transformers
-    if (isServer) {
-      config.externals = config.externals || []
-      config.externals.push('@xenova/transformers')
+    // Ignorar arquivos binários do onnxruntime-node no lado do cliente
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+        crypto: false,
+      };
+      
+      config.externals = config.externals || [];
+      config.externals.push({
+        'onnxruntime-node': 'commonjs onnxruntime-node',
+        '@xenova/transformers': 'commonjs @xenova/transformers',
+      });
     }
     
-    // Configuração para arquivos de modelo
-    config.module.rules.push({
-      test: /\.(bin|onnx|safetensors)$/,
-      type: 'asset/resource',
-      generator: {
-        filename: 'static/models/[name][ext]'
-      }
-    })
-
-    return config
-  }
+    return config;
+  },
+  // Configuração para suportar transformers (Next.js 15+)
+  serverExternalPackages: ['@xenova/transformers', 'onnxruntime-node'],
 }
 
 module.exports = nextConfig

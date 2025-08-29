@@ -1,13 +1,27 @@
 #!/usr/bin/env npx tsx
 
-import { getAITranslationService } from '../src/lib/translation/aiTranslationService';
+// TRADUÇÃO POR IA LOCAL DESABILITADA
+// Para reativar, instale: npm install @xenova/transformers onnxruntime-node
+// e descomente o código abaixo
+
+// import { getAITranslationService } from '../src/lib/translation/aiTranslationService';
 import fs from 'fs';
 import path from 'path';
 
 /**
  * Script para verificar o tamanho do modelo NLLB-200 e informações relacionadas
+ * 
+ * AVISO: Este script está DESABILITADO
+ * A tradução por IA local foi removida para reduzir o tamanho do bundle
  */
 async function checkModelSize() {
+  console.log('❌ TRADUÇÃO POR IA LOCAL DESABILITADA');
+  console.log('Para reativar, siga as instruções no AI_TRANSLATION_PROPOSAL.md');
+  console.log('=' .repeat(60));
+  return;
+
+  // CÓDIGO DESABILITADO - descomente para reativar
+  /*
   console.log('🔍 Verificando informações do modelo NLLB-200...');
   console.log('=' .repeat(60));
 
@@ -136,6 +150,7 @@ async function checkModelSize() {
   console.log('');
   console.log('=' .repeat(60));
   console.log('✅ Verificação concluída!');
+  */
 }
 
 // Executar o script

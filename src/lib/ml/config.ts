@@ -5,7 +5,7 @@
 export const ML_CONFIG = {
   // Modelo de embeddings
   MODEL: {
-    name: 'sentence-transformers/paraphrase-multilingual-mpnet-base-v2',
+    name: 'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2',
     quantized: false, // Usa modelo completo para melhor qualidade
     pooling: 'mean' as const,
     normalize: true

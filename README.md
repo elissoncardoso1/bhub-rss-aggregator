@@ -1,11 +1,14 @@
-# 🤖 bhub - Agregador RSS de Análise do Comportamento
+# 🤖 bhub - Repositório de Consulta em Análise do Comportamento
 
-Um agregador moderno de artigos científicos em Análise do Comportamento Aplicada via RSS/Atom, desenvolvido com tecnologias de ponta para performance, segurança e experiência do usuário.
+Um **repositório de consulta** moderno de artigos científicos em Análise do Comportamento Aplicada, desenvolvido com tecnologias de ponta para preservação, busca e consulta de conteúdo científico histórico.
+
+**🎯 Foco Principal**: Preservar e disponibilizar o acervo científico para consulta e pesquisa, não apenas agregar feeds recentes.
 
 [![GitHub](https://img.shields.io/badge/GitHub-elissoncardoso1%2Fbhub--rss--aggregator-blue?logo=github)](https://github.com/elissoncardoso1/bhub-rss-aggregator)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma)](https://www.prisma.io/)
+[![Preservação](https://img.shields.io/badge/Preservação-📚%20Histórico%20Científico-green)](https://github.com/elissoncardoso1/bhub-rss-aggregator)
 
 ## 🚀 **Tecnologias & Stack**
 
@@ -41,6 +44,32 @@ Um agregador moderno de artigos científicos em Análise do Comportamento Aplica
 - **Tailwind CSS** - Framework CSS utilitário
 - **Lucide React** - Ícones modernos e consistentes
 - **React Hot Toast** - Notificações elegantes
+
+## 📚 **Sistema de Preservação & Consulta**
+
+### **🎯 Filosofia do Sistema**
+O **bhub** foi projetado como um **repositório de consulta científica**, não apenas um agregador de feeds recentes. Nosso objetivo é preservar o conhecimento científico para futuras gerações de pesquisadores.
+
+### **🔒 Preservação de Conteúdo**
+- **✅ Artigos Antigos**: Preservados indefinidamente no banco de dados
+- **✅ Histórico Completo**: Todo conteúdo RSS é mantido para consulta
+- **✅ Limpeza Desabilitada**: Sistema automático de remoção desativado
+- **✅ Arquivamento Inteligente**: Artigos podem ser arquivados mas não deletados
+
+### **📊 Funcionalidades de Consulta**
+- **Busca Avançada**: Por título, resumo, autor, categoria e ano
+- **Filtros Temporais**: Consulta por período de publicação
+- **Artigos Destacados**: Sistema de curadoria para conteúdo relevante
+- **Navegação por Categorias**: Organização temática do conhecimento
+- **Histórico Completo**: Acesso a todo o acervo científico
+
+### **⚙️ Configuração de Preservação**
+```bash
+# Sistema configurado para preservação automática
+# Cron jobs de limpeza: DESABILITADOS
+# Foco: Manter todo o histórico científico
+# Recomendação: Backup regular do banco de dados
+```
 
 ## 📦 **Instalação**
 

@@ -1,7 +1,8 @@
 import Link from "next/link"
 import { formatDateOnly, truncateText } from "@/src/lib/utils"
-import { ExternalLink, Calendar, User, BookOpen, Eye, Clock } from "lucide-react"
+import { ExternalLink, Calendar, User, BookOpen, Eye, Clock, Star } from "lucide-react"
 import { TranslatableText } from "@/src/components/TranslatableText"
+import { ClientUnsplashImage } from "@/src/components/ClientUnsplashImage"
 
 interface ArticleCardProps {
   article: {
@@ -18,6 +19,7 @@ interface ArticleCardProps {
     } | null
     authors: string[]
     viewCount?: number
+    highlighted?: boolean
   }
   variant?: 'main' | 'secondary' | 'small' | 'sidebar'
   showImage?: boolean
@@ -31,23 +33,43 @@ export function ArticleCard({ article, variant = 'secondary', showImage = false,
   // Diferentes layouts baseados na variante
   if (variant === 'main') {
     return (
-      <article className={`journal-card-main ${className || ""} transition-all duration-300 hover:-translate-y-1`}>
-        {showImage && (
-          <div className="w-full h-48 md:h-64 bg-gray-200 mb-4 flex items-center justify-center rounded-lg overflow-hidden">
-            <BookOpen className="h-16 w-16 text-gray-400" />
+      <article className={`journal-card-main ${className || ""} ${article.highlighted ? 'ring-2 ring-yellow-400 shadow-lg' : ''} transition-all duration-300 hover:-translate-y-1 relative`}>
+        {article.highlighted && (
+          <div className="absolute top-2 right-2 z-10">
+            <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1 animate-pulse">
+              <Star className="h-3 w-3 fill-current" />
+              DESTAQUE
+            </div>
           </div>
         )}
         
-        {article.category && (
-          <div className="mb-2">
+        {showImage && (
+          <div className="w-full h-48 md:h-64 mb-4 overflow-hidden">
+            <ClientUnsplashImage
+              title={article.title}
+              category={article.category?.name}
+              keywords={article.authors}
+              width={800}
+              height={320}
+              priority={true}
+              className="w-full h-full"
+            />
+          </div>
+        )}
+        
+        <div className="flex items-center gap-2 mb-2">
+          {article.highlighted && (
+            <Star className="h-4 w-4 text-yellow-500 fill-current" />
+          )}
+          {article.category && (
             <span 
               className="journal-category-badge"
               style={{ backgroundColor: article.category.color }}
             >
               {article.category.name}
             </span>
-          </div>
-        )}
+          )}
+        </div>
         
         <Link href={`/articles/${article.id}`} className="block group">
           <h1 className="journal-headline-main group-hover:text-red-600 transition-colors mb-3">
@@ -116,23 +138,41 @@ export function ArticleCard({ article, variant = 'secondary', showImage = false,
 
   if (variant === 'small' || variant === 'sidebar') {
     return (
-      <article className={`journal-card-small ${className || ""} transition-all duration-300 hover:-translate-y-1`}>
+      <article className={`journal-card-small ${className || ""} ${article.highlighted ? 'ring-1 ring-yellow-400 bg-yellow-50' : ''} transition-all duration-300 hover:-translate-y-1 relative`}>
         <div className="flex gap-3">
           {showImage && (
-            <div className="w-16 h-16 bg-gray-200 flex-shrink-0 flex items-center justify-center rounded-md">
-              <BookOpen className="h-8 w-8 text-gray-400" />
+            <div className="w-16 h-16 flex-shrink-0 relative">
+              {article.highlighted && (
+                <div className="absolute -top-1 -right-1 z-10">
+                  <Star className="h-3 w-3 text-yellow-500 fill-current" />
+                </div>
+              )}
+              <ClientUnsplashImage
+                title={article.title}
+                category={article.category?.name}
+                keywords={article.authors}
+                width={64}
+                height={64}
+                showAttribution={false}
+                className="w-full h-full"
+              />
             </div>
           )}
           
           <div className="flex-1 min-w-0">
-            {article.category && (
-              <span 
-                className="journal-category-badge text-xs mb-1 inline-block"
-                style={{ backgroundColor: article.category.color }}
-              >
-                {article.category.name}
-              </span>
-            )}
+            <div className="flex items-center gap-1 mb-1">
+              {article.highlighted && (
+                <Star className="h-3 w-3 text-yellow-500 fill-current" />
+              )}
+              {article.category && (
+                <span 
+                  className="journal-category-badge text-xs inline-block"
+                  style={{ backgroundColor: article.category.color }}
+                >
+                  {article.category.name}
+                </span>
+              )}
+            </div>
             
             <Link href={`/articles/${article.id}`} className="block group">
               <h3 className="journal-headline text-sm leading-tight group-hover:text-red-600 transition-colors mb-1 line-clamp-2">
@@ -165,27 +205,52 @@ export function ArticleCard({ article, variant = 'secondary', showImage = false,
     )
   }
 
-  // Variante 'secondary' - padrão
+  // Variante secondary
   return (
-    <article className={`journal-card-secondary ${className || ""} transition-all duration-300 hover:-translate-y-1`}>
-      <div className="flex flex-col sm:flex-row gap-4">
+    <article className={`journal-card-secondary ${className || ""} ${article.highlighted ? 'ring-2 ring-yellow-400 bg-yellow-50' : ''} transition-all duration-300 hover:-translate-y-1 relative`}>
+      {article.highlighted && (
+        <div className="absolute top-2 right-2 z-10">
+          <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+            <Star className="h-3 w-3 fill-current" />
+            DESTAQUE
+          </div>
+        </div>
+      )}
+      
+      <div className="flex gap-4">
         {showImage && (
-          <div className="w-full sm:w-32 h-24 sm:h-24 bg-gray-200 flex-shrink-0 flex items-center justify-center rounded-md">
-            <BookOpen className="h-8 w-8 text-gray-400" />
+          <div className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0 relative">
+            {article.highlighted && (
+              <div className="absolute -top-1 -right-1 z-10">
+                <Star className="h-4 w-4 text-yellow-500 fill-current" />
+              </div>
+            )}
+            <ClientUnsplashImage
+              title={article.title}
+              category={article.category?.name}
+              keywords={article.authors}
+              width={128}
+              height={128}
+              showAttribution={false}
+              className="w-full h-full"
+            />
           </div>
         )}
         
         <div className="flex-1 min-w-0">
-          {article.category && (
-            <div className="mb-2">
+          <div className="flex items-center gap-2 mb-2">
+            {article.highlighted && (
+              <Star className="h-4 w-4 text-yellow-500 fill-current" />
+            )}
+            {article.category && (
               <span 
                 className="journal-category-badge"
                 style={{ backgroundColor: article.category.color }}
               >
                 {article.category.name}
               </span>
-            </div>
-          )}
+            )}
+          </div>
           
           <Link href={`/articles/${article.id}`} className="block group">
             <h2 className="journal-headline-secondary group-hover:text-red-600 transition-colors mb-2 line-clamp-2">

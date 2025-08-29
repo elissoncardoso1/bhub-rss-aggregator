@@ -1,10 +1,14 @@
 import { NextRequest, NextResponse } from "next/server"
-import { cleanRepository } from "@/src/jobs/cleanRepository"
+// import { cleanRepository } from "@/src/jobs/cleanRepository" // DESABILITADO
 import { apiSuccess, apiError } from "@/src/lib/api-auth"
 
 /**
- * POST /api/cron/clean - Endpoint para cron externo limpar repositório
- * Usado em ambientes serverless onde não é possível usar node-cron
+ * POST /api/cron/clean - Endpoint para cron externo (DESABILITADO)
+ * 
+ * NOTA: Sistema configurado como REPOSITÓRIO DE CONSULTA
+ * - Artigos antigos são preservados para consulta histórica
+ * - Não há limpeza automática de conteúdo
+ * - Foco em preservar o acervo científico
  */
 export async function POST(request: NextRequest) {
   try {
@@ -14,20 +18,20 @@ export async function POST(request: NextRequest) {
       return apiError("Acesso negado", 401)
     }
 
-    console.log("🧹 Executando limpeza via cron externo")
+    console.log("🧹 Endpoint de limpeza chamado (DESABILITADO - Sistema de consulta)")
 
-    const result = await cleanRepository(365) // Remove artigos com mais de 365 dias
-
+    // Retorna informação sobre o sistema de consulta
     return apiSuccess({
-      deletedArticles: result.deletedArticles,
-      deletedAuthors: result.deletedAuthors,
-      cutoffDate: 'cutoffDate' in result ? result.cutoffDate : undefined,
+      status: "disabled",
+      reason: "Sistema configurado como repositório de consulta",
+      message: "Artigos antigos são preservados para consulta histórica",
       executedAt: new Date().toISOString(),
-      source: "external-cron"
-    }, `Cron executado: ${result.deletedArticles} artigos e ${result.deletedAuthors} autores removidos`)
+      source: "external-cron",
+      recommendation: "Use /api/cron/sync para sincronização de feeds"
+    }, `Sistema de limpeza desabilitado - Foco em preservar o acervo científico`)
 
   } catch (error: any) {
-    console.error("❌ Erro no cron de limpeza:", error)
-    return apiError("Erro no cron de limpeza", 500, error)
+    console.error("❌ Erro no endpoint de limpeza:", error)
+    return apiError("Erro no endpoint de limpeza", 500)
   }
 }

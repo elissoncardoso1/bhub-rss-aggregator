@@ -1,16 +1,22 @@
 #!/usr/bin/env tsx
 
+// TRADUÇÃO POR IA LOCAL DESABILITADA
+// Para reativar, instale: npm install @xenova/transformers onnxruntime-node
+// e descomente o código abaixo
+
 import { getTranslationManager, TranslationManager } from '../src/lib/translation/translationManager';
-import { getAITranslationService } from '../src/lib/translation/aiTranslationService';
+// import { getAITranslationService } from '../src/lib/translation/aiTranslationService';
 
 /**
  * Script de teste para o sistema de tradução com IA local
  * 
- * Testa:
- * - Inicialização do modelo NLLB-200
- * - Tradução português ↔ inglês
- * - Comparação com sistema profissional
- * - Performance e qualidade
+ * AVISO: Este script está DESABILITADO
+ * A tradução por IA local foi removida para reduzir o tamanho do bundle
+ * 
+ * Para reativar:
+ * 1. Instale: npm install @xenova/transformers onnxruntime-node
+ * 2. Descomente os imports e código necessário
+ * 3. Reative o AITranslationService
  */
 
 interface TestResult {

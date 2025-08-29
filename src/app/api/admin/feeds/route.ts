@@ -1,136 +1,96 @@
-import { NextRequest, NextResponse } from "next/server"
-import { prisma } from "@/src/lib/prisma"
-import { withAdmin, apiSuccess, apiError } from "@/src/lib/api-auth"
-import { z } from "zod"
+import { NextRequest, NextResponse } from 'next/server'
+import { getServerSession } from 'next-auth'
+import { authOptions } from '@/src/lib/auth'
+import { prisma } from '@/src/lib/prisma'
+import { z } from 'zod'
 
-// Schema de validação para criar/editar feed
-const feedSchema = z.object({
-  name: z.string().min(1, "Nome é obrigatório"),
-  journalName: z.string().min(1, "Nome do jornal é obrigatório"),
-  feedUrl: z.string().url("URL do feed deve ser válida"),
-  feedType: z.enum(["RSS", "RSS2", "ATOM"]).default("RSS"),
-  country: z.string().optional(),
-  language: z.string().default("pt-BR"),
-  isActive: z.boolean().default(true),
-  syncFrequency: z.number().min(300).default(3600) // Mínimo 5 minutos
+// 🔴 Schema de validação para feeds
+const FeedSchema = z.object({
+  name: z.string().min(1, 'Nome é obrigatório').max(100, 'Nome muito longo'),
+  journalName: z.string().min(1, 'Nome do jornal é obrigatório').max(200, 'Nome do jornal muito longo'),
+  feedUrl: z.string().url('URL do feed inválida'),
+  feedType: z.enum(['RSS', 'RSS2', 'ATOM'], {
+    errorMap: () => ({ message: 'Tipo de feed inválido' })
+  }).optional(),
+  country: z.string().length(2, 'País deve ter 2 caracteres').optional().or(z.literal('')),
+  language: z.string().min(2, 'Idioma deve ter pelo menos 2 caracteres').max(10, 'Idioma muito longo').optional(),
+  isActive: z.boolean().optional(),
+  syncFrequency: z.number().int().min(300, 'Frequência mínima é 5 minutos').max(86400, 'Frequência máxima é 24 horas').optional()
 })
 
-/**
- * GET /api/admin/feeds - Lista todos os feeds
- */
-export const GET = withAdmin(async (request: NextRequest) => {
+// GET - Listar todos os feeds
+export async function GET() {
   try {
-    const { searchParams } = new URL(request.url)
-    const page = parseInt(searchParams.get("page") || "1")
-    const limit = parseInt(searchParams.get("limit") || "20")
-    const isActive = searchParams.get("isActive")
-    
-    const skip = (page - 1) * limit
-    
-    const where = isActive !== null ? { 
-      isActive: isActive === "true" 
-    } : {}
+    const session = await getServerSession(authOptions)
+    if (!session?.user || session.user.role !== 'ADMIN') {
+      return NextResponse.json({ error: 'Não autorizado' }, { status: 401 })
+    }
 
-    const [feeds, total] = await Promise.all([
-      prisma.feed.findMany({
-        where,
-        select: {
-          id: true,
-          name: true,
-          journalName: true,
-          feedUrl: true,
-          feedType: true,
-          country: true,
-          language: true,
-          isActive: true,
-          lastSyncAt: true,
-          syncFrequency: true,
-          errorCount: true,
-          lastError: true,
-          createdAt: true,
-          updatedAt: true,
-          _count: {
-            select: {
-              articles: {
-                where: { isArchived: false }
-              }
-            }
-          }
-        },
-        orderBy: { createdAt: 'desc' },
-        skip,
-        take: limit
-      }),
-      prisma.feed.count({ where })
-    ])
-
-    const formattedFeeds = feeds.map(feed => ({
-      ...feed,
-      id: feed.id.toString(),
-      articleCount: feed._count.articles
-    }))
-
-    return apiSuccess({
-      feeds: formattedFeeds,
-      pagination: {
-        page,
-        limit,
-        total,
-        totalPages: Math.ceil(total / limit)
-      }
+    const feeds = await prisma.feed.findMany({
+      orderBy: { createdAt: 'desc' }
     })
 
-  } catch (error: any) {
-    console.error("Erro ao listar feeds:", error)
-    return apiError("Erro interno do servidor", 500, error)
+    return NextResponse.json({ feeds })
+  } catch (error) {
+    console.error('Erro ao buscar feeds:', error)
+    return NextResponse.json(
+      { error: 'Erro interno do servidor' },
+      { status: 500 }
+    )
   }
-})
+}
 
-/**
- * POST /api/admin/feeds - Cria um novo feed
- */
-export const POST = withAdmin(async (request: NextRequest) => {
+// POST - Criar novo feed
+export async function POST(request: NextRequest) {
   try {
-    const body = await request.json()
-    const validatedData = feedSchema.parse(body)
+    const session = await getServerSession(authOptions)
+    if (!session?.user || session.user.role !== 'ADMIN') {
+      return NextResponse.json({ error: 'Não autorizado' }, { status: 401 })
+    }
 
-    // Verifica se já existe um feed com essa URL
+    const rawData = await request.json()
+    
+    // 🔴 VALIDAR DADOS ANTES DE PROCESSAR
+    const validationResult = FeedSchema.safeParse(rawData)
+    if (!validationResult.success) {
+      return NextResponse.json({ 
+        error: 'Dados inválidos', 
+        details: validationResult.error.errors 
+      }, { status: 400 })
+    }
+    
+    const data = validationResult.data
+    
+    // Verificar se o feed já existe
     const existingFeed = await prisma.feed.findUnique({
-      where: { feedUrl: validatedData.feedUrl }
+      where: { feedUrl: data.feedUrl }
     })
-
+    
     if (existingFeed) {
-      return apiError("Já existe um feed com essa URL", 409)
+      return NextResponse.json({ 
+        error: 'Feed com esta URL já existe' 
+      }, { status: 409 })
     }
-
-    const newFeed = await prisma.feed.create({
-      data: validatedData,
-      select: {
-        id: true,
-        name: true,
-        journalName: true,
-        feedUrl: true,
-        feedType: true,
-        country: true,
-        language: true,
-        isActive: true,
-        syncFrequency: true,
-        createdAt: true
+    
+    const feed = await prisma.feed.create({
+      data: {
+        name: data.name,
+        journalName: data.journalName,
+        feedUrl: data.feedUrl,
+        feedType: data.feedType || 'RSS',
+        country: data.country || null,
+        language: data.language || 'pt-BR',
+        isActive: data.isActive ?? true,
+        syncFrequency: data.syncFrequency || 3600
       }
     })
 
-    return apiSuccess({
-      ...newFeed,
-      id: newFeed.id.toString()
-    }, "Feed criado com sucesso")
-
-  } catch (error: any) {
-    console.error("Erro ao criar feed:", error)
-    
-    if (error instanceof z.ZodError) {
-      return apiError("Dados inválidos", 400, error.errors)
-    }
-    
-    return apiError("Erro interno do servidor", 500, error)
+    return NextResponse.json({ feed }, { status: 201 })
+  } catch (error) {
+    console.error('Erro ao criar feed:', error)
+    return NextResponse.json(
+      { error: 'Erro interno do servidor' },
+      { status: 500 }
+    )
   }
-})
+}

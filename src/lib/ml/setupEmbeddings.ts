@@ -92,7 +92,7 @@ let isInitialized = false
  */
 export class EmbeddingManager {
   private model: any = null
-  private modelName = 'sentence-transformers/paraphrase-multilingual-mpnet-base-v2'
+  private modelName = 'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
 
   /**
    * Inicializa o modelo de embeddings

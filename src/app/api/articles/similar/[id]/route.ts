@@ -4,17 +4,19 @@ import { getFromCache, setInCache, generateSimilarArticlesKey } from "@/src/lib/
 import { logInfo, logError, logDebug, logWarn } from "@/src/lib/logger"
 
 interface Context {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 export async function GET(request: NextRequest, { params }: Context) {
+  const { id } = await params
+  const articleId = BigInt(id)
+  const cacheKey = generateSimilarArticlesKey(id)
+  
   try {
-    const articleId = BigInt(params.id)
-    const cacheKey = generateSimilarArticlesKey(params.id)
     
-    logInfo('Buscando artigos similares', { articleId: params.id, cacheKey })
+    logInfo('Buscando artigos similares', { articleId: id, cacheKey })
 
     // Tenta obter do cache primeiro
     const cachedResult = getFromCache(cacheKey)
@@ -23,7 +25,7 @@ export async function GET(request: NextRequest, { params }: Context) {
       return NextResponse.json(cachedResult)
     }
 
-    logDebug('Cache miss, buscando no banco de dados', { articleId: params.id })
+    logDebug('Cache miss, buscando no banco de dados', { articleId: id })
 
     // Busca o artigo original
     const article = await prisma.article.findUnique({
@@ -47,7 +49,7 @@ export async function GET(request: NextRequest, { params }: Context) {
     })
 
     if (!article) {
-      logWarn('Artigo não encontrado', { articleId: params.id })
+      logWarn('Artigo não encontrado', { articleId: id })
       return NextResponse.json({
         success: false,
         message: "Artigo não encontrado"
@@ -63,7 +65,7 @@ export async function GET(request: NextRequest, { params }: Context) {
     const keywords = article.keywordsRaw ? JSON.parse(article.keywordsRaw) : []
 
     logDebug('Buscando artigos similares', { 
-      articleId: params.id, 
+      articleId: id, 
       categoryId: article.categoryId, 
       authorCount: authorIds.length,
       keywordCount: keywords.length 
@@ -161,7 +163,7 @@ export async function GET(request: NextRequest, { params }: Context) {
     }
 
     logInfo('Artigos similares encontrados', { 
-      articleId: params.id, 
+      articleId: id, 
       similarCount: formattedArticles.length,
       cacheKey 
     })
@@ -173,7 +175,7 @@ export async function GET(request: NextRequest, { params }: Context) {
     return NextResponse.json(result)
 
   } catch (error: any) {
-    logError('Erro ao buscar artigos similares', error, { articleId: params.id })
+    logError('Erro ao buscar artigos similares', error, { articleId: id })
     return NextResponse.json({
       success: false,
       message: "Erro interno do servidor",

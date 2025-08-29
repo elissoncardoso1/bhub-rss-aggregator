@@ -12,12 +12,12 @@ async function testRealFeeds() {
   const feedsToTest = [
     {
       name: 'Revista Perspectivas em Análise do Comportamento',
-      url: 'https://revistaperspectivas.org/perspectivas/feed',
+      url: 'https://revistaperspectivas.org/perspectivas/gateway/plugin/WebFeedGatewayPlugin/rss2',
       country: '🇧🇷'
     },
     {
       name: 'Revista ESPECTRO (UFSCar)',
-      url: 'https://espectro.ufscar.br/index.php/1979/gateway/plugin/WebFeedGatewayPlugin/rss2',
+      url: 'https://www.espectro.ufscar.br/index.php/1979/gateway/plugin/WebFeedGatewayPlugin/rss2',
       country: '🇧🇷'
     },
     {
@@ -48,6 +48,16 @@ async function testRealFeeds() {
     {
       name: 'Perspectives on Behavior Science',
       url: 'https://link.springer.com/search.rss?facet-journal-id=40614&facet-content-type=Article',
+      country: '🇺🇸'
+    },
+    {
+      name: 'OBM Network News (Newsletter)',
+      url: 'http://www.obmnetwork.com/resource/rss/news.rss',
+      country: '🇺🇸'
+    },
+    {
+      name: 'Journal of Organizational Behavior Management (JOBM)',
+      url: 'https://www.tandfonline.com/feed/rss/worg20',
       country: '🇺🇸'
     }
   ]

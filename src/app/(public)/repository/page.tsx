@@ -3,6 +3,7 @@ import { prisma } from "@/src/lib/prisma"
 import { ArticleCard } from "@/src/components/ArticleCard"
 import { RepositorySearchBar } from "@/src/components/RepositorySearchBar"
 import { LoadingCard } from "@/src/components/LoadingSpinner"
+import { BannerAd } from "@/src/components/BannerAd"
 import { Button } from "@/src/components/ui/button"
 import { Badge } from "@/src/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/src/components/ui/card"
@@ -10,17 +11,18 @@ import { BookOpen, Filter, Calendar, User, Tag, ChevronRight } from "lucide-reac
 import Link from "next/link"
 
 interface RepositoryPageProps {
-  searchParams: {
+  searchParams: Promise<{
     q?: string
     category?: string
     feed?: string
     author?: string
     year?: string
     page?: string
-  }
+    highlighted?: string
+  }>
 }
 
-async function getArticles(searchParams: RepositoryPageProps['searchParams']) {
+async function getArticles(searchParams: Awaited<RepositoryPageProps['searchParams']>) {
   const page = parseInt(searchParams.page || "1")
   const limit = 24
   const skip = (page - 1) * limit
@@ -82,6 +84,11 @@ async function getArticles(searchParams: RepositoryPageProps['searchParams']) {
     }
   }
 
+  // Filtro por artigos destacados
+  if (searchParams.highlighted === 'true') {
+    where.highlighted = true
+  }
+
   const [articles, total] = await Promise.all([
     prisma.article.findMany({
       where,
@@ -92,6 +99,7 @@ async function getArticles(searchParams: RepositoryPageProps['searchParams']) {
         publicationDate: true,
         originalUrl: true,
         viewCount: true,
+        highlighted: true,
         createdAt: true,
         feed: {
           select: {
@@ -119,6 +127,7 @@ async function getArticles(searchParams: RepositoryPageProps['searchParams']) {
         }
       },
       orderBy: [
+        { highlighted: 'desc' }, // Artigos destacados primeiro
         { publicationDate: 'desc' },
         { createdAt: 'desc' }
       ],
@@ -135,6 +144,7 @@ async function getArticles(searchParams: RepositoryPageProps['searchParams']) {
     publicationDate: article.publicationDate,
     originalUrl: article.originalUrl,
     viewCount: article.viewCount,
+    highlighted: article.highlighted,
     feedName: article.feed.name,
     journalName: article.feed.journalName,
     category: article.category,
@@ -230,7 +240,7 @@ function FilterSidebar({
   searchParams 
 }: { 
   filters: Awaited<ReturnType<typeof getFilters>>
-  searchParams: RepositoryPageProps['searchParams']
+  searchParams: Awaited<RepositoryPageProps['searchParams']>
 }) {
   const buildUrl = (newParams: Record<string, string | undefined>) => {
     const params = new URLSearchParams()
@@ -280,6 +290,26 @@ function FilterSidebar({
           </div>
         </div>
       )}
+
+      {/* Filtro de Artigos Destacados */}
+      <div className="journal-sidebar-section">
+        <h2 className="journal-sidebar-title">Status</h2>
+        <div className="space-y-2">
+          <Link
+            href={buildUrl({ highlighted: searchParams.highlighted === 'true' ? undefined : 'true' })}
+            className="block"
+          >
+            <div className={`flex items-center gap-2 py-2 px-3 text-sm transition-colors ${
+              searchParams.highlighted === 'true'
+                ? 'bg-yellow-50 text-yellow-700 border-l-2 border-yellow-600'
+                : 'text-gray-700 hover:text-yellow-600 hover:bg-gray-50'
+            }`}>
+              <span className="text-yellow-500">⭐</span>
+              <span>Artigos Destacados</span>
+            </div>
+          </Link>
+        </div>
+      </div>
 
       {/* Anos */}
       {filters.years.length > 0 && (
@@ -353,7 +383,7 @@ function ArticlesList({
 }: { 
   articles: Awaited<ReturnType<typeof getArticles>>['articles']
   pagination: Awaited<ReturnType<typeof getArticles>>['pagination']
-  searchParams: RepositoryPageProps['searchParams']
+  searchParams: Awaited<RepositoryPageProps['searchParams']>
 }) {
   const buildPageUrl = (page: number) => {
     const params = new URLSearchParams()
@@ -465,7 +495,7 @@ function RepositoryRightSidebar({
   searchParams 
 }: { 
   totalArticles: number
-  searchParams: RepositoryPageProps['searchParams']
+  searchParams: Awaited<RepositoryPageProps['searchParams']>
 }) {
   return (
     <aside className="journal-sidebar">
@@ -489,6 +519,12 @@ function RepositoryRightSidebar({
             <div>
               <span className="text-gray-600">Ano:</span>
               <span className="font-medium text-red-600 ml-1">{searchParams.year}</span>
+            </div>
+          )}
+          {searchParams.highlighted === 'true' && (
+            <div>
+              <span className="text-gray-600">Status:</span>
+              <span className="font-medium text-yellow-600 ml-1">⭐ Artigos Destacados</span>
             </div>
           )}
           <div className="pt-2 border-t border-gray-200">
@@ -523,13 +559,19 @@ function RepositoryRightSidebar({
           </Link>
         </div>
       </div>
+
+      {/* Banner da Sidebar */}
+      <div className="journal-sidebar-section">
+        <BannerAd position="sidebar" />
+      </div>
     </aside>
   )
 }
 
 export default async function RepositoryPage({ searchParams }: RepositoryPageProps) {
+  const resolvedSearchParams = await searchParams
   const [articlesData, filters] = await Promise.all([
-    getArticles(searchParams),
+    getArticles(resolvedSearchParams),
     getFilters()
   ])
 
@@ -549,7 +591,7 @@ export default async function RepositoryPage({ searchParams }: RepositoryPagePro
           
           {/* Barra de busca */}
           <div className="max-w-2xl mx-auto">
-            <RepositorySearchBar searchParams={searchParams} />
+            <RepositorySearchBar searchParams={resolvedSearchParams} />
           </div>
         </div>
       </section>
@@ -559,7 +601,7 @@ export default async function RepositoryPage({ searchParams }: RepositoryPagePro
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Sidebar Esquerda - Filtros */}
           <div className="lg:col-span-3 order-2 lg:order-1">
-            <FilterSidebar filters={filters} searchParams={searchParams} />
+            <FilterSidebar filters={filters} searchParams={resolvedSearchParams} />
           </div>
 
           {/* Conteúdo Central - Lista de artigos */}
@@ -567,7 +609,7 @@ export default async function RepositoryPage({ searchParams }: RepositoryPagePro
             <ArticlesList 
               articles={articlesData.articles}
               pagination={articlesData.pagination}
-              searchParams={searchParams}
+              searchParams={resolvedSearchParams}
             />
           </div>
 
@@ -575,7 +617,7 @@ export default async function RepositoryPage({ searchParams }: RepositoryPagePro
           <div className="lg:col-span-3 order-3">
             <RepositoryRightSidebar 
               totalArticles={articlesData.pagination.total}
-              searchParams={searchParams}
+              searchParams={resolvedSearchParams}
             />
           </div>
         </div>

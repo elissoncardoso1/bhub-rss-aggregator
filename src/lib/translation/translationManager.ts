@@ -34,6 +34,9 @@ export interface TranslationManagerOptions {
 /**
  * Gerenciador unificado de tradução que coordena múltiplos provedores
  * com sistema de fallback inteligente
+ * 
+ * NOTA: Tradução por IA local está DESABILITADA
+ * Para habilitar, instale @xenova/transformers e onnxruntime-node
  */
 export class TranslationManager {
   private aiTranslationService: AITranslationService;
@@ -216,16 +219,32 @@ export class TranslationManager {
   private _getProviderOrder(
     preferredProvider?: 'ai-local' | 'google-translate' | 'basic-translation'
   ): ('ai-local' | 'google-translate' | 'basic-translation')[] {
-    // Se há uma preferência específica, começar com ela
-    if (preferredProvider) {
-      const others = ['ai-local', 'google-translate', 'basic-translation']
-        .filter(p => p !== preferredProvider) as ('ai-local' | 'google-translate' | 'basic-translation')[];
-      return [preferredProvider, ...others];
+    // Ordem padrão: Google Translate → Básico (IA local desabilitada)
+    const defaultOrder: ('ai-local' | 'google-translate' | 'basic-translation')[] = [
+      'google-translate',
+      'basic-translation'
+    ];
+
+    // Se especificamente solicitado IA local, incluir (mas falhará)
+    if (preferredProvider === 'ai-local') {
+      return ['ai-local', 'google-translate', 'basic-translation'];
     }
 
-    // Estratégia padrão: IA local primeiro (privacidade + custo zero),
-    // depois Google API (alta qualidade), por último básico (fallback)
-    return ['ai-local', 'google-translate', 'basic-translation'];
+    if (!preferredProvider) {
+      return defaultOrder;
+    }
+
+    // Colocar o provedor preferido primeiro
+    const reorderedProviders: ('ai-local' | 'google-translate' | 'basic-translation')[] = [preferredProvider];
+    const allProviders: ('ai-local' | 'google-translate' | 'basic-translation')[] = ['google-translate', 'basic-translation'];
+    
+    allProviders.forEach(provider => {
+      if (provider !== preferredProvider) {
+        reorderedProviders.push(provider);
+      }
+    });
+
+    return reorderedProviders;
   }
 
   /**

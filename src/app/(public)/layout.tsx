@@ -1,4 +1,6 @@
 import { Navigation } from "@/src/components/Navigation"
+import { BannerAd } from "@/src/components/BannerAd"
+import { PerformanceMonitor } from "@/src/components/PerformanceMonitor"
 
 export default function PublicLayout({
   children,
@@ -8,9 +10,27 @@ export default function PublicLayout({
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
+      
+      {/* Banner do Header */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <BannerAd position="header" />
+        </div>
+      </div>
+      
       <main className="flex-1">
         {children}
       </main>
+      
+      {/* Banner do Footer */}
+      <div className="bg-white border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <BannerAd position="footer" />
+        </div>
+      </div>
+
+      {/* Monitor de Performance (apenas em desenvolvimento) */}
+      <PerformanceMonitor />
       
       {/* Footer */}
       <footer className="journal-footer">

@@ -63,6 +63,7 @@ model Article {
   localFilePath   String?
   categoryId      BigInt?
   isArchived      Boolean         @default(false)
+  highlighted     Boolean         @default(false) // 🆕 Campo para destaque
   viewCount       Int             @default(0)
   createdAt       DateTime        @default(now())
   updatedAt       DateTime        @updatedAt
@@ -75,6 +76,7 @@ model Article {
   @@index([publicationDate])
   @@index([feedId])
   @@index([isArchived])
+  @@index([highlighted]) // 🆕 Índice para performance
 }
 
 model Author {
@@ -151,4 +153,31 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+}
+
+// 🆕 Nova model para gerenciar banners
+model Banner {
+  id          String      @id @default(cuid())
+  title       String
+  imageUrl    String?
+  linkUrl     String?
+  htmlContent String?     @db.Text
+  position    BannerPosition
+  isActive    Boolean     @default(true)
+  priority    Int         @default(0)
+  startDate   DateTime?
+  endDate     DateTime?
+  clickCount  Int         @default(0)
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  @@index([position, isActive])
+  @@index([priority])
+}
+
+enum BannerPosition {
+  HEADER
+  SIDEBAR
+  BETWEEN_ARTICLES
+  FOOTER
 }
