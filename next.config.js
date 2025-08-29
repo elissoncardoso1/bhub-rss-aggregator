@@ -3,6 +3,9 @@ const nextConfig = {
   // Configuração básica do Next.js
   // Tradução por IA local foi removida - para reativar, consulte AI_TRANSLATION_PROPOSAL.md
   
+  // 🔴 Configuração para evitar problemas de build
+  serverExternalPackages: ['@prisma/client', '@xenova/transformers', 'onnxruntime-node'],
+  
   // 🔴 Configuração de CORS e headers de segurança
   async headers() {
     return [
@@ -83,8 +86,6 @@ const nextConfig = {
     
     return config;
   },
-  // Configuração para suportar transformers (Next.js 15+)
-  serverExternalPackages: ['@xenova/transformers', 'onnxruntime-node'],
 }
 
 module.exports = nextConfig

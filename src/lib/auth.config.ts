@@ -1,7 +1,7 @@
 import { NextAuthOptions } from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 import { PrismaAdapter } from "@next-auth/prisma-adapter"
-import { prisma } from "./prisma"
+import { prisma, checkDatabaseConnection } from "./prisma.client"
 import bcrypt from "bcryptjs"
 
 export const authOptions: NextAuthOptions = {
@@ -19,6 +19,13 @@ export const authOptions: NextAuthOptions = {
         }
 
         try {
+          // Verificar se o banco está disponível
+          const dbAvailable = await checkDatabaseConnection()
+          if (!dbAvailable) {
+            console.warn('Banco de dados não disponível para autenticação')
+            return null
+          }
+
           const user = await prisma.user.findUnique({
             where: { email: credentials.email }
           })
@@ -78,18 +85,17 @@ export const authOptions: NextAuthOptions = {
   },
   debug: process.env.NODE_ENV === 'development',
   secret: process.env.NEXTAUTH_SECRET,
-}
-
-/**
- * Verifica se o usuário tem role de admin
- */
-export function isAdmin(userRole?: string): boolean {
-  return userRole === "ADMIN"
-}
-
-/**
- * Hash de senha para armazenamento
- */
-export async function hashPassword(password: string): Promise<string> {
-  return await bcrypt.hash(password, 12)
+  // Configurações adicionais para resolver problemas
+  useSecureCookies: process.env.NODE_ENV === 'production',
+  cookies: {
+    sessionToken: {
+      name: process.env.NODE_ENV === 'production' ? '__Secure-next-auth.session-token' : 'next-auth.session-token',
+      options: {
+        httpOnly: true,
+        sameSite: 'lax',
+        path: '/',
+        secure: process.env.NODE_ENV === 'production'
+      }
+    }
+  }
 }
