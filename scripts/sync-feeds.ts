@@ -25,7 +25,7 @@ async function main() {
     console.log('')
     console.log('Via painel administrativo:')
     console.log('  1. Acesse http://localhost:3000/admin')
-    console.log('  2. Faça login como admin@bhub.com / admin123')
+    console.log('  2. Faça login como admin@bhub.online / admin123')
     console.log('  3. Clique em "Sincronizar Todos os Feeds"')
     console.log('')
     console.log('Via cron job (automático):')

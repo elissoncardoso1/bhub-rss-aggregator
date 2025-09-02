@@ -39,7 +39,7 @@ export default function PublicLayout({
             <div>
               <h3 className="journal-logo text-xl mb-4">bhub</h3>
               <p className="journal-body text-sm">
-                Agregador de artigos científicos em Análise do Comportamento Aplicada. 
+                Repositório de consulta em Análise do Comportamento Aplicada. 
                 Mantenha-se atualizado com as últimas pesquisas da área.
               </p>
             </div>

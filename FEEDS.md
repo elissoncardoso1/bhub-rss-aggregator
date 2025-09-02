@@ -24,7 +24,7 @@ curl -X POST http://localhost:3000/api/admin/sync-all
 ### 3. Via Painel Administrativo
 
 1. Acesse `http://localhost:3000/admin`
-2. Faça login como `admin@bhub.com` / `admin123`
+2. Faça login como `admin@bhub.online` / `admin123`
 3. Clique em "Sincronizar Todos os Feeds"
 
 ## 🇧🇷 Feeds Brasileiros

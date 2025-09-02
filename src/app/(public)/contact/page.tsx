@@ -54,8 +54,9 @@ export default function ContactPage() {
             Entre em Contato
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl mx-auto">
-            Sua opinião é fundamental para o crescimento do bhub. Entre em contato conosco 
-            para sugestões, dúvidas ou contribuições.
+            O bhub é um projeto da comunidade, para a comunidade. Entre em contato conosco 
+            para sugestões, dúvidas, contribuições ou para fazer parte da construção da maior 
+            plataforma de preservação de conteúdo científico em Análise do Comportamento.
           </p>
         </div>
 
@@ -167,10 +168,10 @@ export default function ContactPage() {
                     E-mail
                   </h4>
                   <a
-                    href="mailto:contato@bhub.dev"
+                    href="mailto:contato@bhub.online"
                     className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 flex items-center gap-2"
                   >
-                    contato@bhub.dev
+                    contato@bhub.online
                     <ExternalLink className="h-3 w-3" />
                   </a>
                 </div>
@@ -201,12 +202,12 @@ export default function ContactPage() {
                     Repositório
                   </h4>
                   <a
-                    href="https://github.com/bhub-dev/bhub"
+                    href="https://github.com/elissoncardoso1/bhub-rss-aggregator"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 flex items-center gap-2"
                   >
-                    github.com/bhub-dev/bhub
+                    github.com/elissoncardoso1/bhub-rss-aggregator
                     <ExternalLink className="h-3 w-3" />
                   </a>
                 </div>
@@ -220,7 +221,7 @@ export default function ContactPage() {
                     sugestões de melhorias.
                   </p>
                   <a
-                    href="https://github.com/bhub-dev/bhub/issues/new"
+                    href="https://github.com/elissoncardoso1/bhub-rss-aggregator/issues/new"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -280,12 +281,12 @@ export default function ContactPage() {
                 Junte-se à Comunidade bhub
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
-                Faça parte da construção da maior plataforma de agregação de conteúdo 
+                Faça parte da construção da maior plataforma de preservação de conteúdo 
                 científico em Análise do Comportamento do Brasil.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://github.com/bhub-dev/bhub"
+                  href="https://github.com/elissoncardoso1/bhub-rss-aggregator"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

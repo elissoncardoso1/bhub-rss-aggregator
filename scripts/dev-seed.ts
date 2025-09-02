@@ -20,7 +20,7 @@ async function main() {
   const adminPassword = await bcrypt.hash('admin123', 12)
   const admin = await prisma.user.create({
     data: {
-      email: 'admin@bhub.com',
+      email: 'admin@bhub.online',
       name: 'Administrador bhub',
       password: adminPassword,
       role: 'ADMIN'
@@ -275,14 +275,14 @@ async function main() {
   console.log('🎉 Seed concluído com sucesso!')
   console.log('')
   console.log('📊 Resumo:')
-  console.log(`  - 1 usuário admin (admin@bhub.com / admin123)`)
+  console.log(`  - 1 usuário admin (admin@bhub.online / admin123)`)
   console.log(`  - ${categories.length} categorias`)
   console.log(`  - ${feeds.length} feeds RSS`)
   console.log(`  - ${authors.length} autores`)
   console.log(`  - ${sampleArticles.length} artigos`)
   console.log('')
   console.log('🚀 Você pode agora:')
-  console.log('  - Fazer login como admin@bhub.com / admin123')
+  console.log('  - Fazer login como admin@bhub.online / admin123')
   console.log('  - Explorar o repositório com dados de exemplo')
   console.log('  - Testar a sincronização de feeds')
   console.log('  - Adicionar novos feeds RSS')

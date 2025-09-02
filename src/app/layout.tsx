@@ -11,9 +11,9 @@ import "@/src/lib/startup"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "bhub - Agregador RSS de Análise do Comportamento",
-  description: "Agregador de artigos científicos em Análise do Comportamento Aplicada via RSS/Atom",
-  keywords: ["análise do comportamento", "psicologia", "artigos científicos", "RSS", "agregador"],
+  title: "bhub - Repositório de Consulta em Análise do Comportamento",
+  description: "Repositório moderno de artigos científicos em Análise do Comportamento Aplicada, desenvolvido para preservação, busca e consulta de conteúdo científico histórico",
+  keywords: ["análise do comportamento", "psicologia", "artigos científicos", "repositório", "preservação", "consulta científica", "pesquisa acadêmica"],
   authors: [{ name: "bhub Team" }],
 }
 

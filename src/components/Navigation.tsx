@@ -87,7 +87,7 @@ export function Navigation() {
                 bhub
               </Link>
               <p className="text-xs text-gray-600 mt-1 font-sans">
-                Agregador de Análise do Comportamento
+                Repositório de Consulta em Análise do Comportamento
               </p>
             </div>
 

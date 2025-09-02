@@ -158,20 +158,24 @@ export default function SignInPage() {
               </p>
             </div>
 
-            <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-              <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-                <h3 className="font-medium text-blue-900 dark:text-blue-100 mb-2">
-                  Credenciais de Demonstração
-                </h3>
-                <p className="text-sm text-blue-700 dark:text-blue-300 mb-2">
-                  Para testar o sistema, use:
-                </p>
-                <div className="text-sm font-mono bg-white dark:bg-gray-800 p-2 rounded border">
-                  <div>E-mail: admin@bhub.com</div>
-                  <div>Senha: admin123</div>
+            {/* Credenciais de demonstração - apenas em desenvolvimento */}
+            {process.env.SHOW_DEMO_CREDENTIALS === 'true' && (
+              <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+                  <h3 className="font-medium text-blue-900 dark:text-blue-100 mb-2">
+                    Credenciais de Demonstração
+                  </h3>
+                  <p className="text-sm text-blue-700 dark:text-blue-300 mb-2">
+                    Para testar o sistema, use:
+                  </p>
+                  <div className="text-sm font-mono bg-white dark:bg-gray-800 p-2 rounded border">
+                    <div>E-mail: admin@bhub.online</div>
+                    <div>Senha: admin123</div>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
+
           </CardContent>
         </Card>
 

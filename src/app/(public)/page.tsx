@@ -350,18 +350,60 @@ export default async function HomePage() {
               <span className="text-gradient">bhub</span>
               <br />
               <span className="text-2xl md:text-3xl font-normal">
-                Agregador RSS de Análise do Comportamento
+                Repositório de Consulta em Análise do Comportamento
               </span>
             </h1>
             
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Mantenha-se atualizado com os últimos artigos científicos em Análise do Comportamento Aplicada. 
-              Centralizamos conteúdo de diversos periódicos em um só lugar.
+            <p className="text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
+              Preservando e disponibilizando o acervo científico histórico para consulta e pesquisa acadêmica
+            </p>
+            
+            <p className="text-lg text-gray-500 mb-8 max-w-4xl mx-auto">
+              Um repositório moderno de artigos científicos em Análise do Comportamento Aplicada, desenvolvido com tecnologias de ponta para preservação, busca e consulta de conteúdo científico histórico.
             </p>
           </div>
           
           <div className="max-w-2xl mx-auto">
             <HomeSearchBar />
+          </div>
+        </div>
+      </section>
+
+      {/* Seção de Destaques Principais */}
+      <section className="bg-white py-12 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <BookOpen className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">📚 Preservação Histórica</h3>
+              <p className="text-gray-600 text-sm">Todo o acervo científico preservado indefinidamente</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target className="h-8 w-8 text-green-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">🔍 Busca Avançada</h3>
+              <p className="text-gray-600 text-sm">Por título, resumo, autor, categoria e ano</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="h-8 w-8 text-purple-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">🤖 IA Integrada</h3>
+              <p className="text-gray-600 text-sm">Classificação automática e análise de conteúdo</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-orange-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">📊 Organização Inteligente</h3>
+              <p className="text-gray-600 text-sm">Navegação por categorias e filtros temporais</p>
+            </div>
           </div>
         </div>
       </section>
@@ -598,7 +640,7 @@ export default async function HomePage() {
               <div className="mx-auto mb-4 p-3 bg-red-100 w-fit">
                 <Rss className="h-8 w-8 text-red-600" />
               </div>
-              <h3 className="journal-headline text-lg mb-3">Agregação Automática</h3>
+              <h3 className="journal-headline text-lg mb-3">Preservação Automática</h3>
               <p className="journal-body text-sm">
                 Coletamos automaticamente artigos de múltiplos periódicos via RSS/Atom, 
                 mantendo você sempre atualizado.

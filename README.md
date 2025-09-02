@@ -309,9 +309,9 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ## 🆘 **Suporte**
 
-- **Issues**: [GitHub Issues](https://github.com/seu-usuario/bhub_ts/issues)
-- **Documentação**: [Wiki do Projeto](https://github.com/seu-usuario/bhub_ts/wiki)
-- **Email**: suporte@bhub.com
+- **Issues**: [GitHub Issues](https://github.com/elissoncardoso1/bhub-rss-aggregator/issues)
+- **Documentação**: [Wiki do Projeto](https://github.com/elissoncardoso1/bhub-rss-aggregator/wiki)
+- **Email**: suporte@bhub.online
 
 ---
 

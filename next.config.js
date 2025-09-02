@@ -15,7 +15,7 @@ const nextConfig = {
           {
             key: 'Access-Control-Allow-Origin',
             value: process.env.NODE_ENV === 'production' 
-              ? process.env.NEXTAUTH_URL || 'https://seudominio.com'
+              ? process.env.NEXTAUTH_URL || 'https://bhub.online'
               : 'http://localhost:3000'
           },
           {
